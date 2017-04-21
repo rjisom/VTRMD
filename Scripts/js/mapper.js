@@ -334,4 +334,5 @@ function visualizationGenerator(dataToGenerate, endpoint) {
      var att_wireless = "AT&T Wireless";
      var amazon = "Amazon";
      */
+    //dataToGenerate.
 }
