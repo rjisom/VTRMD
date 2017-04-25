@@ -157,10 +157,12 @@ function initMap(dataToGenerate, endpoint) {
     });
 
     // google maps api - information window
+    // clicking the icon generates data for this test's data
     var caInfowindow = new google.maps.InfoWindow({
         // content string for california west coast
         content: "<div>Total Number of Hops: " + totalHops + "</div>"
         + "<i class='fa fa-mobile fa-5x' onclick='dataVizGenerator(tests);'></i>"
+        + "<i class='material-icons' style='font-size:48px'>tablet_android</i>"
     });
 
     // display info pop-up of traceroute visualization
