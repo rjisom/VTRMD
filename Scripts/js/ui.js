@@ -1,12 +1,12 @@
 function dataVizGenerator(calSpeedData) {
+    // clear landing area
+    $("#visualizationLanding").html("");
     // for cw server
     var cwWest = "<h1 #=''>California West Data: </h1><div></div>";
     $("#visualizationLanding").append(cwWest);
     for (i = 0; i < calSpeedData.cwStartHops; i++) {
         var isp = "<div isp='" + calSpeedData.cwStartISP +"'>" + calSpeedData.cwStartISP + "</div>";
         $("#visualizationLanding").append(isp);
-        var edge = "<hr edge='edge'>";
-        $("#visualizationLanding").append(edge);
     }
 
     for (i = 0; i < calSpeedData.cwTnHops1; i++) {
@@ -54,7 +54,7 @@ function dataVizGenerator(calSpeedData) {
         var isp = "<div isp='" + calSpeedData.eEndISP +"'>" + calSpeedData.eEndISP + "</div>";
         $("#visualizationLanding").append(isp);
     }
-    console.log("WHY");
+
     // for east coast server
     var eastTitle = "<br><h1 #=''>East Coast Data: </h1><br>";
     $("#visualizationLanding").append(eastTitle);
