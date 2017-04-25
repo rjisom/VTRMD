@@ -4,12 +4,13 @@
     width: 30%;
 }
 #map {
-    height: 400px;
+    height: 800px;
     width: 30%;
     float:left;
 }
 #visualizationLanding{
     position: absolute;
+    background-color: aliceblue;
     color: inherit;
     left: 40%;
     right:10%;
@@ -101,7 +102,6 @@ div[isp='*']{
 
 /* For arrows */
 hr[edge='edge']{
-    border-top: 1px solid;
     float: left;
     background-color: black;
 }
