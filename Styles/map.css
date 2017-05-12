@@ -10,91 +10,93 @@
 }
 #visualizationLanding{
     position: absolute;
-    background-color: aliceblue;
-    color: inherit;
+    text: black;
+    background-color: rgba(119, 101, 140, 0.5);
+    color: purple;
     left: 40%;
     right:10%;
+    border-radius: 25px;
 }
 
 /* Set's the styles of each html element by target string */
 div[isp='AT&T Wireless']{
     background-color: red;
-    border-radius: 25px 25px 25px 25px;
-    width: 50px;
-    height: 50px;
+    border-radius: 12.5px 12.5px 12.5px 12.5px;
+    width: 25px;
+    height: 25px;
     text-align: center;
     float: left;
 }
 
 div[isp='AT&T Services']{
     background-color: orange;
-    border-radius: 25px 25px 25px 25px;
-    width: 50px;
-    height: 50px;
+    border-radius: 12.5px 12.5px 12.5px 12.5px;
+    width: 25px;
+    height: 25px;
     text-align: center;
     float: left;
 }
 div[isp='NA']{
-    border-radius: 25px 25px 25px 25px;
-    width: 50px;
-    height: 50px;
+    border-radius: 12.5px 12.5px 12.5px 12.5px;
+    width: 25px;
+    height: 25px;
     text-align: center;
     float: left;
     background-color: grey;
 }
 div[isp='Sprint']{
     background-color: yellow;
-    border-radius: 25px 25px 25px 25px;
-    width: 50px;
-    height: 50px;
+    border-radius: 12.5px 12.5px 12.5px 12.5px;
+    width: 25px;
+    height: 25px;
     text-align: center;
     float: left;
 }
 
 div[isp='Verizon Business']{
     background-color: lightsalmon;
-    border-radius: 25px 25px 25px 25px;
-    width: 50px;
-    height: 50px;
+    border-radius: 12.5px 12.5px 12.5px 12.5px;
+    width: 25px;
+    height: 25px;
     text-align: center;
     float: left;
 }
 div[isp='Abovenet Communications']{
-    border-radius: 25px 25px 25px 25px;
-    width: 50px;
-    height: 50px;
+    border-radius: 12.5px 12.5px 12.5px 12.5px;
+    width: 25px;
+    height: 25px;
     text-align: center;
     float: left;
     background-color: saddlebrown;
 }
 div[isp='Equinix']{
-    border-radius: 25px 25px 25px 25px;
-    width: 50px;
-    height: 50px;
+    border-radius: 12.5px 12.5px 12.5px 12.5px;
+    width: 25px;
+    height: 25px;
     text-align: center;
     float: left;
     background-color: mediumspringgreen;
 }
 div[isp='T-Mobile']{
-    border-radius: 25px 25px 25px 25px;
-    width: 50px;
-    height: 50px;
+    border-radius: 12.5px 12.5px 12.5px 12.5px;
+    width: 25px;
+    height: 25px;
     text-align: center;
     float: left;
     background-color: hotpink;
 }
 div[isp='Amazon']{
-    border-radius: 25px 25px 25px 25px;
-    width: 50px;
-    height: 50px;
+    border-radius: 12.5px 12.5px 12.5px 12.5px;
+    width: 25px;
+    height: 25px;
     text-align: center;
     float: left;
     background-color: purple;
 }
 div[isp='*']{
-    border-radius: 25px 25px 25px 25px;
-    width: 50px;
-    height: 50px;
+    border-radius: 12.5px 12.5px 12.5px 12.5px;
+    width: 25px;
+    height: 25px;
     text-align: center;
     float: left;
     background-color: papayawhip;
@@ -102,7 +104,38 @@ div[isp='*']{
 
 /* For arrows */
 hr[edge='edge']{
-    float: left;
+    width: 25px;
+    text-align: center;
     background-color: black;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px;
+
+    /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
 }
 
